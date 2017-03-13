@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Mad Tore: Imaginary Road</title>
+<link rel="stylesheet" type="text/css" href="madStyle.css">
+		
+</head>
+
+<body>
+
+<canvas id="bgCanvas" width="1024" height="800">
+Ur shitty browser does not support canvas!
+</canvas>
+<canvas id="mainCanvas" width="1024" height="800">
+</canvas>
+<canvas id="playerCanvas" width="1024" height="800">
+</canvas>
+
+<div id="victoryDiv" class="victory">
+	<div id="victoryText">
+		<p id="pasteHere"></p>
+		<p id="doItAgain" class="underline" onclick="game.restart()">DO IT AGAIN?</p>
+	</div>
+</div>
+
+<div class="startScreen" id="startScreen">MAD TORE: </br>
+	<span id="imaRoad">IMAGINARY ROAD</span>
+	</p><span id="start" onclick="startItAll()">START</span>
+</div>
+
+<div class="gameOver" id="gameOver">GAME OVER</p><span onclick="game.restart()">Try Again?</span></div>
+
+<span id="fpsMeter"></span>
+<span id="loadBar">Loading...</span>
+
+<div id="instructions" class="boxes">
+	CONTROLLS:</br>
+	UP		: ↑</br>
+	DOWN	: ↓</br>
+	LEFT	: ←</br>
+	RIGHT	: →</br>
+	SHOOT	: SPACE</br>
+<div id="level" class="boxes rainBowz">
+	LEVEL: <span id="currentLVL">1</span></br>
+	<div id="score" class="boxes rainBowz" style="animation-duration: 4s">
+	SCORE: <span id="currentScore">0</span></br>
+	</div>
+</div>
+</div>
+<div  id="story" class="boxes">
+	<p>
+		IN THE GRIM DARK FUTURE THERE IS ONLY IMAGINARY NUMBERS...</br>
+		YET THERE IS HOPE FOR MANKIND AS ONE MAN HAS THE POWER TO
+		SAVE THE WORLD FROM THE IMAGINARY MENACE:</br> <span class="underline">TORE THE REALFAGS TEACHER</span> </br>
+		ARMED ONLY WITH THE POWER OF OUR LORD AND SAVIOUR <span class="underline">HARAMBE</span> AND RATIONAL NUMBERS,
+		HE GOES ON A QUEST TO SAVE THE WORLD...
+	</p>
+</div>	
+<script src="js/imaginaryjs.js"></script> <!-- Loader de forsjellige classene -->
+<script src="js/imaginaryLvls.js"></script>
+<script src="js/imaginaryBgCode.js"></script>
+
+</body>
+</html>

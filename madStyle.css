@@ -1,0 +1,187 @@
+canvas{
+	position: absolute;
+	top: 100px;
+	left: 500px;
+	background: transparent;
+}
+
+#bgCanvas {
+	z-index: = -2;
+	outline: thick black solid;
+}
+
+#mainCanvas{
+	z-index = -1;
+}
+
+#shootCanvas{
+	z-index = 0;
+}
+
+#fpsMeter{
+	position: absolute;
+	z-index: 1;
+	top: 100px;
+	left: 520px;
+	font-size: 200%;
+	font-family: Consolas;
+}
+
+#instructions{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+}
+
+#level{
+	position: relative;
+	display: none;
+	display: none;
+}
+
+#score{
+	position: relative;
+	display: none;
+}
+
+#loadBar{
+	position: absolute;
+	font-size: 400%;
+	text-align: center;
+	left: 900px;
+	top: 500px;
+	color: orange;
+}
+
+#story{
+	position: absolute;
+	left: 100px;
+	top: 450px;
+	text-align: center;
+}
+
+.victory{
+	font-size: 400%;
+	font-family: Impact;
+}
+
+#victoryDiv{
+	position: absolute;
+	left: 500px;
+	top: 100px;
+	width: 1024px;
+	height: 800px;
+}
+
+#victoryText{
+	margin: auto;
+	width: 500px;
+	text-align: center;
+}
+
+#doItAgain{
+	font-size: 120%;
+	font-family: Arial Black;
+	color: #f500c8;
+	display: none;
+}
+
+#doItAgain:hover{
+	color: #9e0081;
+	cursor: pointer;
+}
+
+#shitTalk{
+	position: absolute;
+	font-size: 150%;
+	text-align: center;
+	height: 30px;
+	width: 100%;
+	pointer-events: none;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.gameOver{
+	position: absolute;
+	font-size: 300%;
+	top: 200px;
+	left: 780px;
+	text-align: center;
+	width: 500px;
+	color: red;
+	display: none;
+}
+
+.gameOver span{
+	position: relative;
+	border-bottom: thick black solid; 
+}
+
+.gameOver span:hover{
+	color: #8a0000;
+	cursor: pointer;
+}
+
+.boxes{
+	font-size: 150%;
+	font-family:Impact;
+	outline: thick black solid;
+	width: 300px;
+}
+
+.rainBowz {
+    animation: colorRotate 7s linear 0s infinite;
+}
+
+#startScreen{
+	position: absolute;
+	font-size: 400%;
+	text-align: center;
+	top: 150px;
+	left: 750px;
+	font-family: Impact;
+	color: orange;
+	display: none;
+}
+
+#imaRoad{
+	font-size: 120%;
+}
+
+#start{
+	font-size: 150%;
+	border-bottom: thick orange solid;
+}
+
+#start:hover{
+	color: #ad5c00;
+	border-bottom: thick orange solid;
+	cursor: pointer;
+}
+
+@keyframes colorRotate {
+    from {
+        background-color: rgb(255, 0, 0);
+    }
+    16.6% {
+        background-color: rgb(255, 0, 255);
+    }
+    33.3% {
+        background-color: rgb(0, 0, 255);
+    }
+    50% {
+        background-color: rgb(0, 255, 255);
+    }
+    66.6% {
+        background-color: rgb(0, 255, 0);
+    }
+    83.3% {
+        background-color: rgb(255, 255, 0);
+    }
+    to {
+        background-color: rgb(255, 0, 0);
+    }
+}
